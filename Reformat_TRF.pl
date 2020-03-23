@@ -27,13 +27,13 @@ if($_=~/^[0-9]/){
         #print "$lg\t$array[0]\t$array[12]\t$i\n";
         #print "$lg\t$array[1]\t$array[12]\t$i\n";
         #print "$lg\t$array[13]\n";
-        #if($A_per >30 && $T_per >30){ # CENTROMERE is mostly AT rich so choose mainly those reads
+        if($A_per >30 && $T_per >30){ # CENTROMERE is mostly AT rich so choose mainly those reads
                 #$lg=~s/gadMor2.1_//g;
                 #print "$lg\t$array[0]\t$i\n";
                 #print "$lg\t$array[1]\t$i\n";
                 #print ">$lg\_$array[0]_$array[1]_$A_per-$T_per-$G_per-$C_per\n$array[14]\n";
                 print "$lg\t$array[13]\n";
-        #       }
+              }
         }
  }
 }
